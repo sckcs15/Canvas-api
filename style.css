@@ -1,10 +1,76 @@
-canvas {
-    width: 800px;
-    height: 800px;
-    border : 1px solid black;
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;500&family=Poppins:ital,wght@0,400;1,300&display=swap');
+@import "reset.css";
+*{
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     display: flex;
+    gap: 20px;
     justify-content: center;
-    align-items: center;
+    padding:20px;
+}
+.color-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap:10px;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+}
+input#color{
+    border-radius: 5px;
+}
+canvas {
+    width: 800px;
+    height: 800px;
+    border : 3px solid #000;
+    border-radius: 10px;
+    padding:20px;
+}
+.color-options{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-bottom:30px;
+}
+.color-option{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform ease-in-out .3s;
+}
+.color-option:hover{
+    transform : scale(1.1);
+}
+button, label {
+    all:unset;
+    padding:5px;
+    text-align: center;
+    background-color:cornflowerblue;
+    color:#fff;
+    cursor: pointer;
+    border-radius: 10px;
+    padding:10px;
+    transition: opacity linear .3s;
+}
+button:hover{
+    opacity: 0.8;
+}
+input#file{
+    display: none;
+}
+input#text{
+    all:unset;
+    padding:10px 10px;
+    border:3px solid cornflowerblue;
+    border-radius: 10px;
+    text-align: center;
+    font-size:14px;
 }
