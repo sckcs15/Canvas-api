@@ -1,12 +1,12 @@
-    # Javascript canvas API 활용
+     Javascript canvas API 활용
 
 ---
 
-~
+```
 캔버스의 위치를 가져온후 getContext()로 그림을 그릴 수 있다.
 const canvas =document.querySelector("canvas");
 const ctx =canvas.getContext("2d");
-~
+```
 
 ```
  임의로 만든 'ctx' 변수는 브러쉬와 같은 역할
